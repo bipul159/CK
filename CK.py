@@ -109,7 +109,7 @@ def method_crack(ids,passlist):
             'method':'POST',
             'scheme':'https',
             'accept': '*/*',
-            accept-language': 'en-IN,en-US;q=0.9,en-GB;q=0.8,en;q=0.7',
+            'accept-language': 'en-IN,en-US;q=0.9,en-GB;q=0.8,en;q=0.7',
             content-type': multipart/form-data; boundary=----WebKitFormBoundaryDp4K0Bh4uM06GxIF',
             'dpr': '2.43125',
             origin': 'https://m.facebook.com',
